@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Target, CheckCircle, Compass, Users, TrendingUp, Play, Star } from 'lucide-react'
+import { ArrowRight, Target, CheckCircle, Compass, Users, TrendingUp, Star } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -116,9 +116,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Depoimentos */}
+          {/* Depoimentos com Imagens Reais */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#FFD700] fill-current" />
@@ -128,14 +128,18 @@ export default function Home() {
                 "Em 30 dias consegui meu primeiro resultado de R$ 10.000 em vendas. O método é realmente simples e eficaz!"
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <img 
+                  src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/cedefa88-49e1-433f-b3ad-2adb94a0a6c4.jpg" 
+                  alt="Diego Rodrigues" 
+                  className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#FFD700]"
+                />
                 <div>
-                  <div className="font-semibold text-gray-900">Maria Silva</div>
+                  <div className="font-semibold text-gray-900">Diego Rodrigues</div>
                   <div className="text-sm text-gray-600">Consultora Digital</div>
                 </div>
               </div>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#FFD700] fill-current" />
@@ -145,14 +149,18 @@ export default function Home() {
                 "Nunca tinha investido em anúncios e consegui escalar meu negócio para 6 dígitos em 6 meses!"
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <img 
+                  src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/86d833f6-29f3-4c54-95ce-dd7392c32380.jpg" 
+                  alt="João Santos" 
+                  className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#FFD700]"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">João Santos</div>
                   <div className="text-sm text-gray-600">E-commerce</div>
                 </div>
               </div>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 text-[#FFD700] fill-current" />
@@ -162,7 +170,11 @@ export default function Home() {
                 "O suporte é incrível e a metodologia funciona mesmo. Recomendo para qualquer empreendedor!"
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <img 
+                  src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/f9f94157-e164-4b13-9ea1-29c7da461596.jpg" 
+                  alt="Ana Costa" 
+                  className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[#FFD700]"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">Ana Costa</div>
                   <div className="text-sm text-gray-600">Infoprodutora</div>
@@ -176,70 +188,57 @@ export default function Home() {
       {/* O que o aluno vai aprender */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                O que você vai aprender no treinamento
-              </h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Como criar campanhas que convertem</h3>
-                    <p className="text-gray-600">Aprenda a estrutura exata para criar anúncios que geram vendas desde o primeiro dia</p>
-                  </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-8">
+              O que você vai aprender no treinamento
+            </h2>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Segmentação de público certeira</h3>
-                    <p className="text-gray-600">Descubra como encontrar e segmentar o público ideal para seu produto ou serviço</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Otimização e escalabilidade</h3>
-                    <p className="text-gray-600">Técnicas avançadas para otimizar campanhas e escalar resultados sem perder lucratividade</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Análise de métricas e ROI</h3>
-                    <p className="text-gray-600">Como interpretar dados e tomar decisões baseadas em métricas que realmente importam</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-black" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Estratégias de retargeting</h3>
-                    <p className="text-gray-600">Recupere visitantes e transforme interessados em compradores com técnicas comprovadas</p>
-                  </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Como criar campanhas que convertem</h3>
+                  <p className="text-gray-600">Aprenda a estrutura exata para criar anúncios que geram vendas desde o primeiro dia</p>
                 </div>
               </div>
-            </div>
-            <div className="relative">
-              {/* Espaço reservado para VSL */}
-              <div className="bg-black rounded-2xl aspect-video flex items-center justify-center shadow-2xl">
-                <div className="text-center text-white">
-                  <Play className="w-20 h-20 mx-auto mb-4 text-[#FFD700]" />
-                  <p className="text-xl font-semibold">Vídeo de Apresentação</p>
-                  <p className="text-gray-300 mt-2">Clique para assistir</p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Segmentação de público certeira</h3>
+                  <p className="text-gray-600">Descubra como encontrar e segmentar o público ideal para seu produto ou serviço</p>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#FFD700] rounded-full flex items-center justify-center shadow-xl">
-                <span className="text-3xl">🚀</span>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Otimização e escalabilidade</h3>
+                  <p className="text-gray-600">Técnicas avançadas para otimizar campanhas e escalar resultados sem perder lucratividade</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Análise de métricas e ROI</h3>
+                  <p className="text-gray-600">Como interpretar dados e tomar decisões baseadas em métricas que realmente importam</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="w-8 h-8 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Estratégias de retargeting</h3>
+                  <p className="text-gray-600">Recupere visitantes e transforme interessados em compradores com técnicas comprovadas</p>
+                </div>
               </div>
             </div>
           </div>
@@ -249,38 +248,28 @@ export default function Home() {
       {/* Sobre o Criador */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto lg:mx-0 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl shadow-2xl flex items-center justify-center">
-                <span className="text-6xl text-gray-500">👤</span>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Sobre seu mentor
+            </h2>
+            <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+              Especialista em tráfego pago com mais de 5 anos de experiência, já gerenciei mais de 
+              <span className="font-bold text-[#FFD700]"> R$ 10 milhões </span> 
+              em investimento publicitário para empresas de diversos segmentos.
+            </p>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Minha missão é democratizar o conhecimento em tráfego pago, ensinando de forma simples 
+              e prática estratégias que realmente funcionam no mercado atual.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <div className="bg-gray-50 px-6 py-3 rounded-full">
+                <span className="text-sm font-semibold text-gray-700">+500 Alunos</span>
               </div>
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#FFD700] rounded-full flex items-center justify-center shadow-xl">
-                <span className="text-2xl">✨</span>
+              <div className="bg-gray-50 px-6 py-3 rounded-full">
+                <span className="text-sm font-semibold text-gray-700">+R$ 10M Gerenciados</span>
               </div>
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Conheça seu mentor
-              </h2>
-              <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                Especialista em tráfego pago com mais de 5 anos de experiência, já gerenciei mais de 
-                <span className="font-bold text-[#FFD700]"> R$ 10 milhões </span> 
-                em investimento publicitário para empresas de diversos segmentos.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Minha missão é democratizar o conhecimento em tráfego pago, ensinando de forma simples 
-                e prática estratégias que realmente funcionam no mercado atual.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="bg-gray-50 px-6 py-3 rounded-full">
-                  <span className="text-sm font-semibold text-gray-700">+500 Alunos</span>
-                </div>
-                <div className="bg-gray-50 px-6 py-3 rounded-full">
-                  <span className="text-sm font-semibold text-gray-700">+R$ 10M Gerenciados</span>
-                </div>
-                <div className="bg-gray-50 px-6 py-3 rounded-full">
-                  <span className="text-sm font-semibold text-gray-700">5+ Anos Experiência</span>
-                </div>
+              <div className="bg-gray-50 px-6 py-3 rounded-full">
+                <span className="text-sm font-semibold text-gray-700">5+ Anos Experiência</span>
               </div>
             </div>
           </div>
