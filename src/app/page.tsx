@@ -19,10 +19,15 @@ export default function Home() {
               <p className="text-xl sm:text-2xl text-gray-300 mb-8 leading-relaxed">
                 Mesmo que você nunca tenha investido em anúncios antes
               </p>
-              <button className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-black font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[#FFD700]/50 flex items-center gap-3 mx-auto lg:mx-0">
+              <a 
+                href="https://pay.kiwify.com.br/AEpIKfD" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-black font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[#FFD700]/50 flex items-center gap-3 mx-auto lg:mx-0 w-fit"
+              >
                 Quero começar agora
                 <ArrowRight className="w-6 h-6" />
-              </button>
+              </a>
             </div>
             <div className="relative">
               <div className="relative z-10">
@@ -312,19 +317,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Espaço reservado para checkout */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 max-w-2xl mx-auto border border-white/20">
-            <h3 className="text-2xl font-bold text-white mb-4">Área de Checkout</h3>
-            <p className="text-gray-300 mb-6">Integração com plataforma de pagamento será adicionada aqui</p>
-            <div className="bg-gray-700 h-32 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400">Formulário de Pagamento</span>
-            </div>
-          </div>
-
-          <button className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-black font-bold text-xl px-16 py-6 rounded-full hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[#FFD700]/50 flex items-center gap-4 mx-auto">
+          <a 
+            href="https://pay.kiwify.com.br/AEpIKfD" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-black font-bold text-xl px-16 py-6 rounded-full hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-[#FFD700]/50 flex items-center gap-4 mx-auto w-fit mb-6"
+          >
             Garantir minha vaga agora
             <ArrowRight className="w-8 h-8" />
-          </button>
+          </a>
           
           <p className="text-sm text-gray-400 mt-6">
             🔒 Compra 100% segura • Garantia de 7 dias • Suporte 24/7
